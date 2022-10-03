@@ -7,5 +7,10 @@ docker build -t mytestproj .
 
 ## Command to run interactive python environment
 ```
-docker run --rm -it -v $pwd:/home mytestproj
+docker-compose up -d
+```
+
+## Command to login into container in bash mode
+```
+docker exec -it ubuntu bash
 ```

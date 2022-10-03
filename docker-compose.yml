@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ubuntu:
+    container_name: ubuntu
+    image: ubuntu_server:1.0
+    volumes:
+      - './:/home'
+    restart: on-failure
+    command: ["sleep","infinity"]
